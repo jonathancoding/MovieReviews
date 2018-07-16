@@ -5,16 +5,17 @@ import retrofit.RestAdapter;
 
 import static com.example.jy.nytimesmoviereview.APIServices.APIConstants.API_KEY;
 
-public class APIService {
-    private static APIService mInstance;
-    private APIService() {
+//APIClient class wraps different APIServices for consumption
+public class APIClient {
+    private static APIClient mInstance;
+    private APIClient() {
 
     }
-    public static APIService getInstance() {
+    public static APIClient getInstance() {
         if (mInstance != null) {
             return mInstance;
         } else {
-            return new APIService();
+            return new APIClient();
         }
     }
     public ReviewListService getMovieReviewService() {

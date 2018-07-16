@@ -11,7 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.jy.nytimesmoviereview.APIResponses.Review;
-import com.example.jy.nytimesmoviereview.APIServices.APIService;
+import com.example.jy.nytimesmoviereview.APIServices.APIClient;
 import com.example.jy.nytimesmoviereview.Adapters.ReviewListAdapter;
 import com.example.jy.nytimesmoviereview.R;
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fetchReviewList(){
-        APIService.getInstance().getMovieReviewService().getMovieReviews(new Callback<Review.ReviewResult>() {
+        APIClient.getInstance().getMovieReviewService().getMovieReviews(new Callback<Review.ReviewResult>() {
             @Override
             public void success(Review.ReviewResult reviewResult, Response response) {
                 mProgressBar.setVisibility(View.GONE);
