@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/standard_layout_margin_padding"
+    card_view:cardCornerRadius="@dimen/standard_layout_margin_padding">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/standard_layout_margin_padding">
+
+        <TextView
+            android:id="@+id/display_title"
+            android:layout_margin="@dimen/standard_textview_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_font_size" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/byline"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/standard_textview_margin"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/publication_date"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/standard_textview_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/mpaa_rating"
+            android:layout_margin="@dimen/standard_textview_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_margin="@dimen/standard_textview_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/summary_short"
+            android:layout_margin="@dimen/standard_textview_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NYTimesMovieReview</string>
+    <string name="error_message">Oops, the content is hijacked by the aliens</string>
+</resources>
